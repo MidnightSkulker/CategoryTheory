@@ -45,9 +45,21 @@ $$
 
 \begin{figure}[!h]
   \centerline{\xymatrix{
-      & Fa \ar[r]^{G} \ar[d]^{\alpha_a} & G(Fa) \ar[r]^{\beta_{Fa}} \ar[d]^{G\alpha_a} \ar[rd]^{(\beta \circ \alpha)_a}& G'(Fa) \ar[d]^{G'\alpha_a} \ar[r]^{\beta'_{Fa}} & G''(Fa) \ar[d]^{G''\alpha_a} \\
-      a \ar[ur]^{F} \ar[r]^{F'} \ar[dr]_{F''} & F'a \ar[r]^{G} \ar[d]^{\alpha'_a} & G(Fa') \ar[d]^{G\alpha'_a} \ar [r]^{\beta_{F'a}} & G'(F'a) \ar[r]^{\beta'_{F'a}} \ar[d]^{G'\alpha'_a} \ar[rd]^{(\beta' \circ \alpha')_a} & G''(F'a) \ar[d]^{G''\alpha'_a} \\
-      & F''a \ar[r]^{G} & G(F''a) \ar[r]^{\beta_{F''a}} & G'(F''a) \ar[r]^{\beta'_{F''a}} & G''(F''a)
+      & Fa \ar[rr]^{G} \ar[dd]^{\alpha_a} & &
+      G(Fa) \ar[rr]^{\beta_{Fa}} \ar[dd]^{G\alpha_a} \ar[rrdd]^{(\beta \circ \alpha)_a} & &
+      G'(Fa) \ar[dd]^{G'\alpha_a} \ar[rr]^{\beta'_{Fa}} & &
+      G''(Fa) \ar[dd]^{G''\alpha_a} \\
+      & & \txt<3pc>{G Functor}\\
+      a \ar[uur]^{F} \ar[r]^{F'} \ar[ddr]_{F''} &
+      F'a \ar[rr]^{G} \ar[dd]^{\alpha'_a} & &
+      G(Fa') \ar[dd]^{G\alpha'_a} \ar [rr]^{\beta_{F'a}} & &
+      G'(F'a) \ar[rr]^{\beta'_{F'a}} \ar[dd]^{G'\alpha'_a} \ar[rrdd]^{(\beta' \circ \alpha')_a} & &
+      G''(F'a) \ar[dd]^{G''\alpha'_a} \\
+      \\
+      & F''a \ar[rr]^{G} & &
+      G(F''a) \ar[rr]^{\beta_{F''a}} & &
+      G'(F''a) \ar[rr]^{\beta'_{F''a}} & &
+      G''(F''a)
     }}
   \caption{Interchange Law Proof}
 \end{figure}
